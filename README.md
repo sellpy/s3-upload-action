@@ -18,7 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
-      - uses: sellpy/s3-upload-action@master
+      - uses: sellpy/s3-upload-action@main
         with:
           aws_secret_access_key_id: ${{ secrets.AWS_SECRET_ACCESS_KEY_ID }}
           aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY}}

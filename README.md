@@ -22,7 +22,7 @@ jobs:
         with:
           aws_secret_access_key_id: ${{ secrets.AWS_SECRET_ACCESS_KEY_ID }}
           aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY}}
-          aws_bucket: ${{ secrets.AWS_BUCKET }}
+          aws_bucket: my_bucket
           source_file_path: 'path/to/file.json'
           destination_file_path: 'destination/file.json'
 ```

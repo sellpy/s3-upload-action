@@ -30,13 +30,12 @@ jobs:
 
 The following settings must be passed as environment variables as shown in the example. Sensitive information, especially `aws_secret_access_key_id` and `aws_secret_access_key`, should be [set as encrypted secrets](https://help.github.com/en/articles/virtual-environments-for-github-actions#creating-and-using-secrets-encrypted-variables) — otherwise, they'll be public to anyone browsing your repository's source code
 
-| name                    | description                                                                                                                                                          |
-|-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `aws_secret_access_key_id`  | (Required) Your AWS Secret Access Access Key Id. |
-| `aws_secret_access_key`     | (Required) Your AWS Secret Access Key. |
-| `aws_bucket`                | (Required) The name of the bucket you're upload to. |
-| `source_file_path`          | (Required) The local file you wish to upload to S3. |
-| `destination_file_path`     | (Required) The destination path in S3 |
-| `aws_region`                | (Optional) The AWS region of the bucket. Defaults to `eu-west-1` |
-| `acl`                       | (Optional) The Access Control List of the uploaded object. Defaults to `public-read` |
-                                                                      |
+| Name                       | Required | Default value | Description |
+|----------------------------|----------|---------------|-------------|
+| `aws_secret_access_key_id` | ✔️        | -             | Your AWS Secret Access Access Key Id. |
+| `aws_secret_access_key`    | ✔️        | -             | Your AWS Secret Access Key. |
+| `aws_bucket`               | ✔️        | -             | The name of the bucket you're upload to. |
+| `source_file_path`         | ✔️        | -             | The local file you wish to upload to S3. |
+| `destination_file_path`    | ✔️        | -             | The destination path in S3 |
+| `aws_region`               | -        | `eu-west-1`   | The AWS region of the bucket. |
+| `acl`                      | -        | `public-read` | The Access Control List of the uploaded object. |

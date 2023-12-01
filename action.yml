@@ -26,4 +26,4 @@ inputs:
     description: 'destination directory for upload'
 runs:
   using: 'node20'
-  main: 's3-upload.js'
+  main: 'dist/index.js'

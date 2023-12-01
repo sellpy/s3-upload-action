@@ -1,0 +1,25 @@
+{
+  "name": "s3-upload-action",
+  "version": "1.0.0",
+  "description": "Github action to use to upload file to AWS S3.",
+  "main": "s3-upload.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sellpy/s3-upload-action.git"
+  },
+  "author": "Sellpy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sellpy/s3-upload-action/issues"
+  },
+  "homepage": "https://github.com/sellpy/s3-upload-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.10.1",
+    "@aws-sdk/client-s3": "^3.462.0",
+    "@aws-sdk/lib-storage": "^3.462.0",
+    "mime-types": "^2.1.35"
+  }
+}

@@ -1,0 +1,29 @@
+name: s3 Upload
+description: 'Upload file to S3'
+inputs:
+  aws_secret_access_key_id:
+    description: 'aws secret access key id'
+    required: true
+  aws_secret_access_key:
+    description: 'aws secret access key'
+    required: true
+  aws_bucket:
+    description: 'aws bucket name'
+    required: true
+  aws_region:
+    description: 'aws region'
+    default: 'eu-west-1'
+    required: false
+  acl:
+    description: 'access control list'
+    default: 'public-read'
+    required: false
+  source_file_path:
+    required: true
+    description: 'directory to upload'
+  destination_file_path:
+    required: true
+    description: 'destination directory for upload'
+runs:
+  using: 'node20'
+  main: 's3-upload.js'

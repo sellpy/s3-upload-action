@@ -1,4 +1,4 @@
-# s3-upload-action
+# Github action - s3-upload-action
 
 This action upload a file to AWS S3
 

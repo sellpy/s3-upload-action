@@ -16,7 +16,7 @@ inputs:
     required: false
   acl:
     description: 'access control list'
-    default: 'public-read'
+    default: 'private'
     required: false
   source_file_path:
     required: true

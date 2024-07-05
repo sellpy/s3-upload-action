@@ -38,4 +38,4 @@ The following settings must be passed as environment variables as shown in the e
 | `source_file_path`         | ✔️        | -             | The local file you wish to upload to S3. |
 | `destination_file_path`    | ✔️        | -             | The destination path in S3 |
 | `aws_region`               | -        | `eu-west-1`   | The AWS region of the bucket. |
-| `acl`                      | -        | `public-read` | The Access Control List of the uploaded object. |
+| `acl`                      | -        | `private` | The Access Control List of the uploaded object. |
